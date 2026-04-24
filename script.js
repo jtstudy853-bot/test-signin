@@ -1,4 +1,4 @@
-const CLIENT_ID = "1083083815618-9vp7plrgthi4iqf7v1sed7hf2l7nh3d3.apps.googleusercontent.com";
+const CLIENT_ID = "1083083815618-tmq56pmm6011d6p0i21it8sb231rr92g.apps.googleusercontent.com";
 
 let accessToken = null;
 let gmailEmail = null;

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VigilBoard Sources</title>
+
+<link rel="stylesheet" href="style.css"/>
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script defer src="script.js"></script>
+</head>
+
+<body>
+
+<div class="app">
+
+  <div class="card">
+    <div class="card-hd">
+      <div class="card-title">Gmail Integration</div>
+    </div>
+
+    <!-- Google Sign-In -->
+    <div id="gSignIn"></div>
+
+    <!-- Connected State -->
+    <div id="gmailConnected" style="display:none; margin-top:12px;">
+      
+      <div class="set-row">
+        <div class="set-icon">📧</div>
+        <div class="set-info">
+          <div class="set-name" id="gmailEmail">Not connected</div>
+          <div class="set-desc">Gmail linked successfully</div>
+        </div>
+        <button class="btn btn-danger btn-sm" onclick="logout()">Disconnect</button>
+      </div>
+
+      <div class="field">
+        <label>Sender filter</label>
+        <input id="senderFilter" class="tm-input" placeholder="example@gmail.com">
+      </div>
+
+      <div class="field">
+        <label>Keyword filter</label>
+        <input id="keywordFilter" class="tm-input" placeholder="OTP, urgent">
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
